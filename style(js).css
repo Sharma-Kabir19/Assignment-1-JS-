@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL (applies to all pages)
-   ========================= */
+/* GLOBAL (applies to all pages)*/
 :root {
   --brand: #4b6ef5;
   --brand-dark: #3957c7;
@@ -38,12 +36,12 @@ body.loaded { opacity: 1; }
   transform: translateY(0);
 }
 
-/* --- Image zoom on hover (used in projects) --- */
+/*  Image zoom on hover (used in projects)  */
 .project-image-container { overflow: hidden; }
 .project-image { transition: transform 0.4s ease; }
 .project-image:hover { transform: scale(1.07); }
 
-/* --- Tilt utility (keep both class names, same effect) --- */
+/*  Tilt utility (keep both class names, same effect) */
 .project-section { perspective: 1000px; }
 .project-card-tilt,
 .tilt-card {
@@ -55,7 +53,7 @@ body.loaded { opacity: 1; }
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
-/* --- Spotlight (home hero) --- */
+/*  Spotlight (home hero)  */
 .hero-section { position: relative; overflow: hidden; }
 .spotlight {
   position: absolute;
@@ -69,9 +67,7 @@ body.loaded { opacity: 1; }
   transform: translate(-50%, -50%);
 }
 
-/* =========================
-   NAVBAR (shared across pages)
-   ========================= */
+/* NAVBAR (shared across pages) */
 .project-page .navbar,
 .workex-page .navbar,
 .education-page .navbar,
@@ -150,9 +146,7 @@ body.loaded { opacity: 1; }
   .project-page .navbar-right ul li a { font-size: 12px; }
 }
 
-/* =========================
-   HOME PAGE
-   ========================= */
+/* HOME PAGE */
 .home-page {
   background-color: #1a1a2e;
   color: #e0e0e0;
@@ -268,9 +262,7 @@ body.loaded { opacity: 1; }
   .home-page .bottom-text h2 { font-size: 30px; }
 }
 
-/* =========================
-   PROJECTS PAGE
-   ========================= */
+/* PROJECTS PAGE */
 .project-page { background-color: var(--bg-light); color: #333; }
 
 .project-page .section-title { text-align: center; }
@@ -363,9 +355,7 @@ body.loaded { opacity: 1; }
   }
 }
 
-/* =========================
-   WORK EXPERIENCE PAGE
-   ========================= */
+/*  WORK EXPERIENCE PAGE */
 .workex-page { background-color: var(--bg-light); color: var(--text); }
 
 .workex-section {
@@ -411,9 +401,7 @@ body.loaded { opacity: 1; }
   .workex-page .work-item h2 { font-size: 20px; }
 }
 
-/* =========================
-   EDUCATION PAGE
-   ========================= */
+/*  EDUCATION PAGE */
 .education-page { background-color: var(--bg-light); color: var(--text); }
 
 .education-section {
@@ -466,9 +454,7 @@ body.loaded { opacity: 1; }
   }
 }
 
-/* =========================
-   CONTACT PAGE
-   ========================= */
+/*  CONTACT PAGE */
 .contact-page { background-color: var(--bg-light); color: var(--text); }
 
 .contact-section {
@@ -577,12 +563,12 @@ body.loaded { opacity: 1; }
   100% { opacity: 0; transform: translate(-50%, -50%) scale(2.4); }
 }
 body, html {
-  cursor: none; /* hide default cursor */
+  cursor: none; 
 }
 
 .custom-cursor {
   position: fixed;
-  width: 32px;       /* change size if needed */
+  width: 32px;      
   height: 32px;
   pointer-events: none;
   transform: translate(-50%, -50%);
